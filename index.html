@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff7f3" />
+  <meta name="description" content="Un jardín que florece contigo. Un regalo por nuestros 10 meses." />
+  <title>Un jardín para nosotros ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar"><a href="#inicio" class="brand">♡ <span>nuestro pequeño universo</span></a><span class="top-date">23.11.2026</span></header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-stars" aria-hidden="true"><span>✦</span><span>✧</span><span>✳</span><span>✧</span></div>
+      <span class="eyebrow">UNA SORPRESA HECHA SOLO PARA TI</span>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-flower">✿</div><span class="tiny-heart">♥</span></div>
+      <h1>El amor también <em>florece.</em></h1>
+      <p class="hero-description">Y contigo, hasta los días más sencillos se convierten en algo bonito.</p>
+      <div class="hero-highlight">10 meses construyendo nuestro jardín ♡</div>
+      <button id="startButton" class="button button-primary" type="button">Entra a nuestro jardín <span aria-hidden="true">↗</span></button>
+      <span class="helper">Una experiencia para mirar, escuchar y descubrir</span>
+    </section>
+
+    <section class="story is-hidden" id="experiencia" aria-label="Nuestro jardín">
+      <div class="section-intro"><span class="eyebrow">ESTA CANCIÓN ES PARA TI</span><h2>Hay una canción que me hace pensar <em>en nosotros.</em></h2><p>No necesitas leer diez razones. Solo quiero regalarte un pequeño lugar donde podamos quedarnos un ratito.</p></div>
+      <div class="player-card">
+        <div class="vinyl" id="vinyl" aria-hidden="true"><div class="vinyl-center">♡</div></div>
+        <div class="track-details"><span class="eyebrow">NUESTRA BANDA SONORA</span><strong>10 razones para amarte</strong><span>Martín Elías</span><div class="player-progress"><div id="songFill"></div></div><div class="times"><span id="songTime">0:00</span><span id="songDuration">--:--</span></div></div>
+        <button id="musicButton" class="play-button" type="button" aria-label="Reproducir la canción">▶</button>
+        <audio id="song" preload="metadata" src="assets/cancion.mp3"></audio>
+      </div>
+      <p class="player-hint" id="musicStatus" role="status">Dale al play o planta las rosas a tu ritmo. Este jardín también florece sin música.</p>
+
+      <section class="lyrics-card" aria-labelledby="lyricsTitle">
+        <header class="lyrics-header">
+          <h2 id="lyricsTitle">Letra</h2>
+          <span>10 razones para amarte</span>
+        </header>
+        <div class="lyrics-tools">
+          <button id="lyricsFollow" type="button" aria-pressed="true">Seguir la letra</button>
+          <span id="lyricsStatus" role="status">Pulsa play para seguir la canción.</span>
+        </div>
+        <div class="lyrics-scroll" id="lyricsScroll" tabindex="0" role="region" aria-label="Letra de la canción">
+          <div id="lyricsContent" class="lyrics-content">
+            <p><button class="lyric-line" type="button" data-start="16.19" data-end="18.42" disabled>Bueno mi amor</button></p>
+            <p><button class="lyric-line" type="button" data-start="18.42" data-end="20.96" disabled>Y esta canción es con el alma para ti</button></p>
+            <p><button class="lyric-line" type="button" data-start="20.96" data-end="25.4" disabled>Mi mona linda-ay</button></p>
+            <p><button class="lyric-line" type="button" data-start="33.27" data-end="36.55" disabled>Yo siento que volví a nacer</button></p>
+            <p><button class="lyric-line" type="button" data-start="36.55" data-end="42.16" disabled>Desde el momento en que te conocí mi reina linda</button></p>
+            <p><button class="lyric-line" type="button" data-start="42.16" data-end="45.7" disabled>Desde que de ti me enamoré</button></p>
+            <p><button class="lyric-line" type="button" data-start="45.7" data-end="50.37" disabled>Toda mi vida te la entregué desde ese día</button></p>
+            <p><button class="lyric-line" type="button" data-start="50.37" data-end="55.93" disabled>No me queda espacio para nadie, soy solo tuyo</button></p>
+            <p><button class="lyric-line" type="button" data-start="55.93" data-end="62" disabled>Menos mal que tuve suerte y pude conquistarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="62" data-end="68.08" disabled>Sé que Dios te hizo fue para mi eso no lo dudo</button></p>
+            <p><button class="lyric-line" type="button" data-start="68.08" data-end="72.45" disabled>Porque de otra no hubiese podido enamorarme</button></p>
+            <p><button class="lyric-line" type="button" data-start="72.45" data-end="76.82" disabled>Deseo que este amor bello perdure todo el tiempo</button></p>
+            <p><button class="lyric-line" type="button" data-start="76.82" data-end="79.8" disabled>Que jamás se borre lo que siento</button></p>
+            <p><button class="lyric-line" type="button" data-start="79.8" data-end="82.65" disabled>Y pienses en mí en todo momento</button></p>
+            <p><button class="lyric-line" type="button" data-start="82.65" data-end="85.61" disabled>Diez razones para mi vivir</button></p>
+            <p><button class="lyric-line" type="button" data-start="85.61" data-end="88.67" disabled>Para descansar y despertar</button></p>
+            <p><button class="lyric-line" type="button" data-start="88.67" data-end="91.61" disabled>Diez razones para ser feliz</button></p>
+            <p><button class="lyric-line" type="button" data-start="91.61" data-end="94.96" disabled>Disfrutando tu amor nada más</button></p>
+            <p><button class="lyric-line" type="button" data-start="94.96" data-end="97.48" disabled>Conocerte, enamorarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="97.48" data-end="98.69" disabled>Comprenderte, valorarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="98.69" data-end="99.97" disabled>Respetarte y consentirte</button></p>
+            <p><button class="lyric-line" type="button" data-start="99.97" data-end="101.2" disabled>Extrañarte y pensarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="101.2" data-end="103.73" disabled>Serte fiel y tenerte</button></p>
+            <p><button class="lyric-line" type="button" data-start="103.73" data-end="108.51" disabled>Diez razones para amarte lo juro mi amor</button></p>
+            <p><button class="lyric-line" type="button" data-start="108.51" data-end="114.41" disabled>No me queda espacio para nadie, soy solo tuyo</button></p>
+            <p><button class="lyric-line" type="button" data-start="114.41" data-end="119.61" disabled>Menos mal que tuve suerte y pude conquistarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="172.18" data-end="174.1" disabled>Desde entonces mi amor es por ti</button></p>
+            <p><button class="lyric-line" type="button" data-start="174.1" data-end="179.55" disabled>Porque al mirarte logré descubrir un mundo nuevo</button></p>
+            <p><button class="lyric-line" type="button" data-start="179.55" data-end="182.85" disabled>Donde soy plenamente feliz</button></p>
+            <p><button class="lyric-line" type="button" data-start="182.85" data-end="187.65" disabled>Y por eso serás para mí, mi amor eterno</button></p>
+            <p><button class="lyric-line" type="button" data-start="187.65" data-end="193.55" disabled>No me queda espacio para nadie, soy solo tuyo</button></p>
+            <p><button class="lyric-line" type="button" data-start="193.55" data-end="198.18" disabled>Menos mal que tuve suerte y pude conquistarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="198.18" data-end="205.52" disabled>Sé que Dios te hizo fue para mi eso no lo dudo</button></p>
+            <p><button class="lyric-line" type="button" data-start="205.52" data-end="210.12" disabled>Porque de otra no hubiese podido enamorarme</button></p>
+            <p><button class="lyric-line" type="button" data-start="210.12" data-end="213.63" disabled>Deseo que este amor bello perdure todo el tiempo</button></p>
+            <p><button class="lyric-line" type="button" data-start="213.63" data-end="216.98" disabled>Que jamás se borre lo que siento</button></p>
+            <p><button class="lyric-line" type="button" data-start="216.98" data-end="219.73" disabled>Y pienses en mi en todo momento</button></p>
+            <p><button class="lyric-line" type="button" data-start="219.73" data-end="222.5" disabled>Diez razones para mi vivir</button></p>
+            <p><button class="lyric-line" type="button" data-start="222.5" data-end="225.22" disabled>Para descansar y despertar</button></p>
+            <p><button class="lyric-line" type="button" data-start="225.22" data-end="228.43" disabled>Diez razones para ser feliz</button></p>
+            <p><button class="lyric-line" type="button" data-start="228.43" data-end="231.68" disabled>Disfrutando tu amor nada más</button></p>
+            <p><button class="lyric-line" type="button" data-start="231.68" data-end="234.07" disabled>Conocerte, enamorarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="234.07" data-end="235.15" disabled>Comprenderte, valorarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="235.15" data-end="236.69" disabled>Respetarte y consentirte</button></p>
+            <p><button class="lyric-line" type="button" data-start="236.69" data-end="237.93" disabled>Extrañarte y pensarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="237.93" data-end="240.37" disabled>Serte fiel y tenerte</button></p>
+            <p><button class="lyric-line" type="button" data-start="240.37" data-end="245.56" disabled>Diez razones para amarte lo juro que siento por ti es amor</button></p>
+            <p><button class="lyric-line" type="button" data-start="245.56" data-end="251.05" disabled>No me queda espacio para nadie, soy solo tuyo</button></p>
+            <p><button class="lyric-line" type="button" data-start="251.05" data-end="256.32" disabled>Menos mal que tuve suerte y pude conquistarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="266.83" data-end="271.86" disabled>No me queda espacio para nadie (Soy solo tuyo)</button></p>
+            <p><button class="lyric-line" type="button" data-start="271.86" data-end="277.74" disabled>Menos mal que tuve suerte y pude conquistarte</button></p>
+            <p><button class="lyric-line" type="button" data-start="277.74" data-end="283.6" disabled>Sé que Dios te hizo fue para mí (Eso no lo dudo)</button></p>
+            <p><button class="lyric-line" type="button" data-start="283.6" data-end="289.96" disabled>Porque de otra no hubiese podido (Enamorarme)</button></p>
+            <p><button class="lyric-line" type="button" data-start="289.96" data-end="294.87" disabled>No me queda espacio para nadie (Soy solo tuyo)</button></p>
+            <p><button class="lyric-line" type="button" data-start="294.87" data-end="301.31" disabled>Menos mal que tuve suerte y pude (Conquistarte)</button></p>
+            <p><button class="lyric-line" type="button" data-start="301.31" data-end="306.88" disabled>Se que Dios te hizo fue para mi (Eso no lo dudo)</button></p>
+            <p><button class="lyric-line" type="button" data-start="306.88" data-end="310.57" disabled>Porque de otra no hubiese podido (Enamorarme)</button></p>
+          </div>
+        </div>
+        <details class="lyrics-adjust">
+          <summary>Ajustar sincronización</summary>
+          <p>Si la letra cambia tarde, adelántala; si cambia antes de la voz, retrásala.</p>
+          <div class="lyrics-adjust-controls">
+            <button id="lyricsEarlier" type="button">Adelantar 0,5 s</button>
+            <output id="lyricsOffset" aria-live="polite">Sin ajuste</output>
+            <button id="lyricsLater" type="button">Retrasar 0,5 s</button>
+            <button id="lyricsReset" type="button">Restablecer</button>
+          </div>
+          <p>Sincronización de referencia. Toca una frase para escuchar desde ese momento.</p>
+        </details>
+        <footer class="lyrics-footer">
+          <span>Martín Elías · Juancho De La Espriella</span>
+          <a href="https://www.youtube.com/watch?v=sxYu5elDS3w" target="_blank" rel="noopener noreferrer">Ver video oficial <span class="lyrics-link-note">(nueva pestaña)</span></a>
+        </footer>
+      </section>
+
+      <div class="garden-heading"><span class="eyebrow">UN LUGAR QUE CRECE CONTIGO</span><h2>Diez meses.<br /><em>Diez rosas para nosotros.</em></h2><p>Una rosa por cada mes compartido. Plántalas a tu ritmo o deja que crezcan con la canción. Al florecer las diez, se abrirá la carta.</p></div>
+      <div class="garden-progress"><label for="gardenProgress">NUESTROS DIEZ MESES</label><div class="month-markers" id="monthMarkers" aria-hidden="true"></div><progress id="gardenProgress" max="10" value="0">0 de 10</progress></div>
+      <div class="garden" id="garden" aria-label="Jardín interactivo con flores plantadas">
+        <div class="sun" aria-hidden="true"></div><div class="cloud cloud-one" aria-hidden="true"></div><div class="cloud cloud-two" aria-hidden="true"></div>
+        <div class="garden-note" id="gardenNote">Todo lo bonito empieza con algo pequeño.</div>
+        <div class="garden-flowers" id="gardenFlowers" aria-hidden="true"></div>
+        <div class="garden-ground" aria-hidden="true"></div><div class="garden-keepsake" aria-hidden="true">♡ <span>10 meses en flor</span> ♡</div>
+      </div>
+      <div class="garden-actions"><span class="flower-counter" id="flowerCounter" role="status" aria-atomic="true">0 de 10 rosas · una por cada mes</span><button class="button button-primary" id="plantButton" type="button">Plantar la primera rosa</button><a class="button letter-link" id="letterLink" href="#finalLetter" hidden>Leer tu carta ♡</a><button class="text-button" id="resetButton" type="button">Volver a empezar</button></div>
+
+      <section class="memory-section" aria-labelledby="memoryTitle"><div class="memory-decoration" aria-hidden="true">✧ ✿ ✧</div><span class="eyebrow">NO TODO SE GUARDA EN FOTOS</span><h2 id="memoryTitle">Hay momentos que se quedan <em>en el corazón.</em></h2><div class="memory-placeholder"><span aria-hidden="true">♡</span><p>Aquí irá su fotografía favorita</p><small>Fotografía pendiente de añadir</small><img src="assets/nuestra-foto.jpg" alt="Nuestro recuerdo favorito" id="memoryPhoto" hidden /></div></section>
+
+      <section class="letter-section" id="letterSection"><span class="eyebrow">UN ÚLTIMO DETALLE</span><h2>Algo que quiero <em>decirte.</em></h2><div class="letter-closed" id="letterClosed"><span class="envelope-icon" aria-hidden="true">✉</span><p>La carta se abrirá cuando florezcan las diez rosas.</p><span class="letter-lock">♡</span></div><article class="letter is-hidden" id="finalLetter" tabindex="-1" aria-label="Carta para ti">
+        <span class="letter-header">Mi princesita hermosa:</span>
+        <p>Tal vez no exista una canción capaz de contar todo lo que hemos vivido, pero hay canciones que me recuerdan lo bonito que es compartir la vida contigo.</p>
+        <p>Me gusta pensar que lo nuestro es como este jardín: algo que cuidamos juntos, que se transforma y que sigue floreciendo cada día que elegimos amarnos.</p>
+        <p>Hoy quiero regalarte diez razones para amarte, aunque podría encontrar miles, millones. Estas diez, como dice la canción, expresan mucho de lo que siento por ti:</p>
+        <p><em>Conocerte, enamorarte.<br />Comprenderte, valorarte.<br />Respetarte y consentirte.<br />Extrañarte y pensarte.<br />Serte fiel y tenerte.</em></p>
+        <p>Más que razones, son maneras de amarte que quiero seguir eligiendo: conocerte un poquito más, enamorarte con pequeños detalles, escucharte para comprenderte y hacerte sentir lo valiosa que eres para mí.</p>
+        <p>Felices diez meses, mi princesita hermosa. Han sido los diez meses más bonitos de mi vida, y me hace feliz pensar en todo lo que todavía podemos compartir.</p>
+        <p>Quiero seguir creciendo contigo, abrazarte en los días difíciles y celebrar a tu lado los días felices. Si algo deseo al mirar este pequeño jardín, es que podamos seguir cuidándolo durante toda la vida.</p>
+        <p>Te amo, y quiero seguir descubriendo nuevas razones para amarte cada día.</p>
+        <p class="signature">Con todo mi amor, para ti mi angelito hermoso. ♡</p>
+      </article></section>
+      <footer>Hecho con amor, para nuestra historia · 10 meses ♡</footer>
+    </section>
+  </main>
+</body>
+</html>

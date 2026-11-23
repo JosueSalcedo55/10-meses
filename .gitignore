@@ -1,0 +1,12 @@
+# Conservar solo la copia de audio utilizada por la web.
+/*.mp3
+
+# Archivos locales del editor y del asistente.
+.vscode/
+.codex/
+.agents/
+AGENTS.md
+.env
+.env.*
+Thumbs.db
+Desktop.ini

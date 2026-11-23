@@ -1,0 +1,91 @@
+:root{--cream:#fff9f5;--rose:#bc647c;--rose-deep:#8d425d;--rose-light:#fce8e9;--ink:#654956;--muted:#927b82;--green:#769b74}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #ab5573;outline-offset:4px}h1,h2,p{margin-top:0}h1,h2{font-family:'Playfair Display',serif;font-weight:500;line-height:1.14}em{color:var(--rose);font-weight:500}.grain{position:fixed;inset:0;z-index:10;pointer-events:none;opacity:.19;background-image:radial-gradient(#c88b9a .55px,transparent .65px);background-size:8px 8px}.topbar{position:absolute;z-index:2;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:28px clamp(24px,6vw,95px);font-size:12px;letter-spacing:.06em;color:var(--rose-deep)}.brand{color:inherit;text-decoration:none;font-size:17px}.brand span{font-size:12px;margin-left:6px}.top-date{font-size:11px;letter-spacing:.16em}.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:115px 22px 75px;position:relative;background:radial-gradient(ellipse at 50% 52%,#fff4f1 5%,#fffaf6 65%)}.hero-stars span{position:absolute;color:#dba2ac;font-size:22px}.hero-stars span:nth-child(1){top:24%;left:18%}.hero-stars span:nth-child(2){top:48%;right:16%}.hero-stars span:nth-child(3){bottom:22%;left:23%;font-size:13px}.hero-stars span:nth-child(4){top:18%;right:29%;font-size:14px}.eyebrow{font-size:10px;letter-spacing:.25em;color:var(--rose);font-weight:700}.hero-art{height:230px;width:230px;position:relative;margin:18px 0 12px;display:grid;place-items:center}.orbit{position:absolute;inset:10px;border:1px solid #f0cad0;border-radius:50%}.orbit-two{inset:34px;transform:rotate(28deg);border-style:dashed}.hero-flower{font-size:145px;line-height:1;color:#db8ca1;filter:drop-shadow(0 12px 18px #f4ced2);animation:float 5s ease-in-out infinite}.tiny-heart{position:absolute;top:37px;right:18px;color:#d18499;font-size:25px;transform:rotate(20deg)}h1{font-size:clamp(43px,7.8vw,75px);letter-spacing:-.045em;margin:0 0 19px}.hero-description{font-size:15px;line-height:1.8;max-width:430px;color:var(--muted)}.hero-highlight{font-family:'Playfair Display',serif;font-style:italic;margin:10px 0 27px;color:var(--rose-deep);font-size:17px}.button{border:0;border-radius:50px;padding:17px 27px;font-size:13px;font-weight:700;transition:transform .2s,box-shadow .2s}.button:hover{transform:translateY(-3px);box-shadow:0 9px 25px #cf82924f}.button-primary{background:var(--rose);color:#fff;box-shadow:0 7px 18px #cf82923a}.button span{padding-left:12px}.helper{font-size:11px;color:#ae969b;margin-top:20px}.is-hidden{display:none!important}.story{padding:25px 20px 0}.section-intro,.garden-heading,.memory-section,.letter-section{text-align:center;max-width:700px;margin:0 auto}.section-intro{padding:85px 0 30px}.section-intro h2,.garden-heading h2,.memory-section h2,.letter-section h2{font-size:clamp(32px,5vw,52px);margin:15px 0 18px;letter-spacing:-.035em}.section-intro p,.garden-heading p,.memory-section>p{font-size:14px;line-height:1.85;color:var(--muted);max-width:510px;margin:0 auto}.player-card{max-width:680px;margin:25px auto 0;padding:25px;border:1px solid #f3d8d9;border-radius:24px;background:#fffefd;display:flex;align-items:center;gap:25px;box-shadow:0 16px 50px #d79da715}.vinyl{width:115px;height:115px;flex-shrink:0;border-radius:100%;background:repeating-radial-gradient(circle,#43333d 0,#43333d 5px,#51404b 6px,#43333d 7px);display:grid;place-items:center;box-shadow:0 5px 13px #3332}.vinyl.playing{animation:spin 3s linear infinite}.vinyl-center{width:45px;height:45px;border-radius:50%;background:#e7a4b2;display:grid;place-items:center;color:white;font-size:23px}.track-details{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px}.track-details strong{font-family:'Playfair Display',serif;font-size:22px;font-weight:500}.track-details>span:not(.eyebrow){font-size:12px;color:var(--muted)}.player-progress{height:5px;background:#f7e4e8;border-radius:4px;margin-top:10px;overflow:hidden}.player-progress div{height:100%;width:0;background:var(--rose);transition:width .15s}.times{display:flex;justify-content:space-between;color:var(--muted);font-size:10px}.play-button{border:0;color:white;background:var(--rose);width:44px;height:44px;border-radius:50%;flex-shrink:0;font-size:17px}.player-hint{max-width:680px;margin:12px auto 0;color:var(--muted);text-align:center;font-size:11px;line-height:1.6}.player-hint code{overflow-wrap:anywhere}.garden-heading{padding:110px 0 30px}.garden{position:relative;max-width:960px;height:400px;margin:0 auto;border:1px solid #f0dadd;border-radius:28px 28px 22px 22px;overflow:hidden;background:linear-gradient(#fbe9e7 0%,#fff3e9 55%,#f7e3d5 100%)}.sun{position:absolute;right:14%;top:45px;width:83px;height:83px;border-radius:50%;background:#ffe4b1;box-shadow:0 0 60px #ffddad}.cloud{position:absolute;width:90px;height:23px;background:#fff9f4b9;border-radius:25px}.cloud:before{content:'';position:absolute;width:43px;height:40px;border-radius:50%;background:inherit;left:24px;bottom:6px}.cloud-one{top:82px;left:14%}.cloud-two{top:130px;right:32%;transform:scale(.7)}.garden-note{z-index:2;position:absolute;top:24px;left:24px;right:24px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:#8d6370}.garden-ground{position:absolute;bottom:-36px;width:130%;height:130px;left:-15%;border-radius:50% 50% 0 0;background:#a0b69c;box-shadow:0 -18px 0 #b8c9a7}.garden-flowers{position:absolute;inset:0;z-index:1}.flower{position:absolute;bottom:65px;left:var(--x);width:80px;height:var(--h);transform:translateX(-50%);transform-origin:bottom;animation:grow .7s both;pointer-events:none}.flower .stem{position:absolute;bottom:0;left:38px;background:#6b9a75;width:4px;height:calc(100% - 32px);border-radius:4px}.flower .leaf{position:absolute;width:27px;height:12px;background:#7aab7b;border-radius:100% 0 100% 0;bottom:28%;left:14px;transform:rotate(18deg)}.flower .leaf.right{left:40px;bottom:45%;transform:rotate(-52deg)}.flower .bloom{position:absolute;top:0;left:11px;font-size:63px;line-height:1;color:var(--flower-color);text-shadow:0 3px 12px #c66a8840}.garden-actions{text-align:center;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;padding:23px 0}.flower-counter{font-size:12px;color:var(--muted);flex-basis:100%}.text-button{background:transparent;border:0;color:var(--rose-deep);font-size:12px;text-decoration:underline;text-underline-offset:4px}.memory-section{padding:105px 0}.memory-decoration{color:#d99ba7;font-size:28px;letter-spacing:20px;margin-bottom:15px}.memory-placeholder{margin:35px auto 0;border:1px dashed #dfb5be;border-radius:18px;background:#fffdfd;width:min(100%,420px);min-height:270px;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:10px;padding:18px;position:relative;overflow:hidden}.memory-placeholder>span{font-size:53px;color:#d7a1ab}.memory-placeholder p{font-size:14px;margin:0}.memory-placeholder small{color:var(--muted);font-size:11px}.memory-placeholder:has(img:not([hidden])){padding:0}.memory-placeholder:has(img:not([hidden]))>span,.memory-placeholder:has(img:not([hidden]))>p,.memory-placeholder:has(img:not([hidden]))>small{display:none}.memory-placeholder img{display:block;width:100%;max-height:480px;object-fit:cover}.letter-section{padding:20px 0 100px}.letter-closed,.letter{background:#fff;border:1px solid #f0d8da;border-radius:24px;padding:34px;margin-top:30px;box-shadow:0 14px 40px #dbb3b41f}.envelope-icon{display:block;font-size:50px;color:var(--rose);margin-bottom:12px}.letter-closed p{font-size:13px;color:var(--muted);margin:0}.letter-lock{font-size:20px;color:var(--rose);display:block;margin-top:13px}.letter{text-align:left;max-width:650px;transform-origin:top;animation:letterReveal .7s both}.letter-header{font-family:'Playfair Display',serif;color:var(--rose);font-size:25px}.letter p{font-size:14px;line-height:2;color:#6c535a;margin:19px 0}.letter .signature{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;color:var(--rose-deep);text-align:right}footer{padding:27px;text-align:center;border-top:1px solid #f1dadc;color:#ab8992;font-size:11px}@keyframes float{50%{transform:translateY(-13px) rotate(8deg)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes grow{from{transform:translateX(-50%) scaleY(.02);opacity:0}to{transform:translateX(-50%) scaleY(1);opacity:1}}@keyframes letterReveal{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}@media(max-width:650px){.topbar{padding:23px}.top-date{font-size:10px}.brand span{font-size:10px}.hero-art{width:185px;height:185px}.hero-flower{font-size:118px}.hero-description{max-width:320px}.story{padding:15px 15px 0}.player-card{gap:15px;padding:17px;flex-wrap:wrap}.vinyl{width:75px;height:75px}.vinyl-center{height:31px;width:31px}.track-details strong{font-size:18px}.play-button{margin:auto}.garden{height:330px}.garden-note{font-size:15px}.flower{bottom:57px}.garden-actions{flex-direction:column}.section-intro{padding-top:55px}.garden-heading{padding-top:75px}.memory-section{padding:80px 0}.letter-section{padding-bottom:65px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* Jardín de aniversario: dos filas de rosas y progreso compartido. */
+[hidden]{display:none!important}
+:root{--muted:#79616b}
+.garden-heading p,.section-intro p,.memory-section>p,.letter p{font-size:1rem}
+.button,.text-button,.flower-counter,.player-hint{font-size:.875rem}
+.button-primary,.play-button{background:#a64e69}
+.text-button{min-height:44px;padding:10px}
+.garden-progress{max-width:320px;margin:0 auto 24px;text-align:center}
+.garden-progress label{font-size:.75rem;letter-spacing:.18em;color:var(--rose-deep)}
+.month-markers{display:flex;justify-content:space-between;gap:8px;margin:16px 0 12px}
+.month-markers span{height:14px;width:14px;border:1px solid #ba788c;border-radius:50% 50% 45% 45%;background:#fff;transition:background .3s,transform .3s}
+.month-markers .is-grown{background:#b65c79;transform:rotate(-25deg);box-shadow:inset 2px 2px 0 #ffffff70}
+.garden-progress progress{display:block;width:100%;height:5px;border:0;border-radius:5px;overflow:hidden;background:#eedbe0;accent-color:#a64e69}
+.garden-progress progress::-webkit-progress-bar{background:#eedbe0}
+.garden-progress progress::-webkit-progress-value{background:#a64e69;transition:width .3s}
+.garden-progress progress::-moz-progress-bar{background:#a64e69}
+.garden{height:430px;background:radial-gradient(ellipse at 80% 25%,#fff6d6 0,transparent 45%),linear-gradient(#f8e1e5,#fff3e9 60%,#e9ead5);box-shadow:0 24px 60px #9a506814;border:1px solid #e3c4cd}
+.garden-note{top:28px;color:#704650;font-size:1.125rem}
+.garden-ground{background:#8ca585;box-shadow:0 -18px 0 #b8c9a7,0 -30px 0 #d0d8b955}
+.garden-flowers{inset:110px 16px 0}
+.flower{bottom:48px;width:64px;height:var(--h)}
+.rose-sway{position:absolute;inset:0;transform-origin:bottom center;animation:roseSway 5s ease-in-out var(--delay) infinite alternate}
+.flower .stem{left:30px;width:4px;background:linear-gradient(90deg,#50785d,#88a578);height:calc(100% - 25px)}
+.flower .leaf{left:5px;background:linear-gradient(155deg,#adc48f,#507e63);width:28px;height:15px;border-bottom:1px solid #50785d}
+.flower .leaf.right{left:32px}
+.flower .bloom{left:0;top:0;width:64px;height:60px;font-size:inherit;filter:drop-shadow(0 4px 4px #78405225)}
+.bloom i{position:absolute;left:17px;top:5px;width:32px;height:38px;border-radius:55% 55% 42% 50%;background:linear-gradient(140deg,#fff4ef,var(--flower-color) 48%,#b46380);border:1px solid #fff2ef66;transform-origin:50% 75%}
+.bloom i:nth-child(2){transform:rotate(60deg)}
+.bloom i:nth-child(3){transform:rotate(120deg)}
+.bloom i:nth-child(4){transform:rotate(180deg)}
+.bloom i:nth-child(5){transform:rotate(240deg)}
+.bloom i:nth-child(6){transform:rotate(300deg)}
+.bloom b{position:absolute;left:23px;top:21px;width:23px;height:23px;border-radius:55% 40% 55% 40%;background:linear-gradient(135deg,#f4c7cf,var(--flower-color) 45%,#9b4e6a);border:3px double #f9d9dc;transform:rotate(35deg);box-shadow:0 2px 3px #8d425d40}
+.garden-keepsake{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#fff;font-family:'Playfair Display',serif;font-size:1.125rem;opacity:0;transform:translateY(8px);transition:opacity .6s,transform .6s}
+.garden-keepsake span{margin:0 12px}
+.is-complete .garden-keepsake{opacity:1;transform:none}
+.garden-actions{max-width:700px;margin:auto;gap:14px}
+.button:disabled{cursor:default;background:#e9d8de;color:#654956;box-shadow:none;transform:none}
+.letter-link{background:#674856;color:white;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.letter{scroll-margin-top:24px}
+.letter:focus-visible{outline:2px solid var(--rose);outline-offset:6px}
+.memory-placeholder{box-shadow:0 18px 40px #9a506812;transform:rotate(-1deg);border:8px solid white;outline:1px solid #ead7dc}
+.memory-placeholder img{max-height:540px;object-fit:contain}
+@keyframes roseSway{from{transform:rotate(-2deg)}to{transform:rotate(2deg)}}
+@media(max-width:650px){
+  .garden{height:385px;border-radius:24px}
+  .garden-note{font-size:1rem;left:16px;right:16px}
+  .garden-flowers{left:10px;right:10px}
+  .flower .bloom{transform:scale(.78);transform-origin:center 65%}
+  .garden-actions .button{width:min(100%,320px);min-height:48px}
+  .garden-actions{gap:10px}
+  .letter-closed,.letter{padding:25px}
+  .eyebrow{letter-spacing:.15em}
+}
+@media(prefers-reduced-motion:reduce){.rose-sway{animation:none}.month-markers span,.garden-keepsake{transition:none}}
+/* Tarjeta de lectura inspirada en la referencia del reproductor. */
+.lyrics-card{max-width:680px;margin:28px auto 0;padding:26px 28px 20px;border-radius:20px;background:linear-gradient(145deg,#fce8e9,#fff7f3);color:var(--ink);border:1px solid #e8c7d0;box-shadow:0 15px 35px #9a50681a}
+.lyrics-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.lyrics-header h2{margin:0;font:700 1.125rem 'DM Sans',sans-serif}
+.lyrics-header>span{color:var(--rose-deep);font-size:.875rem}
+.lyrics-scroll{max-height:420px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#bc647c #fce8e9;padding:4px 12px 24px 0}
+.lyrics-scroll:focus-visible{outline:2px solid var(--rose-deep);outline-offset:5px;border-radius:4px}
+.lyrics-content p{font-size:clamp(1.5rem,4.5vw,2rem);font-weight:700;line-height:1.4;letter-spacing:-.025em;color:var(--muted);margin:0 0 24px;overflow-wrap:anywhere;white-space:pre-line}
+.lyrics-content .lyrics-empty{color:#fff;margin-bottom:12px}
+.lyrics-content .lyrics-pending{font-size:1rem;font-weight:400;letter-spacing:0;max-width:30ch;margin-bottom:0}
+.lyrics-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;text-align:left;border-top:1px solid #dcb4c0;padding:18px 0 0;margin-top:12px;font-size:.8125rem;color:var(--rose-deep)}
+.lyrics-footer a{display:inline-flex;gap:5px;align-items:center;flex-wrap:wrap;min-height:44px;color:var(--rose-deep);font-weight:700;text-underline-offset:4px}
+.lyrics-footer a:focus-visible{outline-color:var(--rose-deep)}
+.lyrics-link-note{font-weight:400;font-size:.75rem}
+@media(max-width:650px){.lyrics-card{padding:22px 20px 16px;border-radius:16px}.lyrics-scroll{max-height:350px}.lyrics-footer{gap:4px}}
+
+/* Letra sincronizada con los colores del jardín. */
+.lyrics-content p{margin:0 0 10px}
+.lyric-line{display:block;width:100%;border:0;border-left:3px solid transparent;background:transparent;text-align:left;padding:10px 12px;color:#80636e;font:inherit;line-height:inherit;letter-spacing:inherit;border-radius:0 12px 12px 0;transition:color .2s,background .2s}
+.lyric-line:disabled{cursor:default;opacity:1}
+.lyric-line.is-past{color:#80636e}
+.lyric-line.is-current{color:#80344f;background:#f4d3de;border-left-color:#a64e69}
+.lyric-line:not(:disabled):hover{background:#f8dee5;color:#80344f}
+.lyric-line:focus-visible{outline:2px solid #8d425d;outline-offset:-2px}
+.lyrics-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px;font-size:.875rem}
+.lyrics-tools button,.lyrics-adjust button{border:1px solid #c995a7;border-radius:24px;min-height:44px;padding:8px 14px;background:#fff9f5;color:#80344f;font-size:.875rem}
+.lyrics-tools button[aria-pressed="true"]{background:#8d425d;color:#fff}
+.lyrics-scroll{position:relative;max-height:400px}
+.lyrics-adjust{border-top:1px solid #dcb4c0;padding-top:12px;color:var(--ink);font-size:.875rem}
+.lyrics-adjust summary{cursor:pointer;min-height:44px;align-content:center}
+.lyrics-adjust p{line-height:1.65;margin:12px 0}
+.lyrics-adjust-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lyrics-adjust output{min-width:110px;text-align:center}
+.lyrics-adjust summary:focus-visible{outline:2px solid var(--rose-deep);outline-offset:3px}
+@media(max-width:650px){.lyrics-scroll{max-height:350px}.lyric-line{padding:10px 8px}.lyrics-tools{gap:8px}}
